@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>UrbanCar</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <p><i class="fa-solid fa-car-side"></i> Urban Cars</p>
+            <i class="fa-solid fa-bars"></i>
+        </header>
+        <aside>
+            <label for="cars">Ordenar Por:</label>
+            <select class="aside__select" name="cars" id="cars">
+                <option value="price">Precio</option>
+                <option value="e1">Model E1</option>
+                <option value="k2">Model K2</option>
+                <option value="other">...Otros</option>
+            </select>
+        </aside>
+        <main>
+            <div class="container-products">
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/e1.jpg" alt="e1" />
+                    <h5 class="card-product__title">Model: E1</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/k2.jpg" alt="k2" />
+                    <h5 class="card-product__title">Model: K2</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/k3.jpg" alt="k3" />
+                    <h5 class="card-product__title">Model: K3</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/r3.jpg" alt="r3" />
+                    <h5 class="card-product__title">Model: R3</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/v8.jpg" alt="v8" />
+                    <h5 class="card-product__title">Model: V8</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/x3.jpg" alt="x3" />
+                    <h5 class="card-product__title">Model: X3</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/x4.jpg" alt="x4" />
+                    <h5 class="card-product__title">Model: X4</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+                <div class="card-product">
+                    <img class="card-product__image" src="./assets/img/y19.jpg" alt="y19" />
+                    <h5 class="card-product__title">Model: Y19</h5>
+                    <button class="card-product__button">Ver mas</button>
+                </div>
+            </div>
+        </main>
+        <section>
+            <div class="filter-item filter-item__start">&#60;&#60;</div>
+            <div class="filter-item">1</div>
+            <div class="filter-item">2</div>
+            <div class="filter-item">3</div>
+            <div class="filter-item filter-item__end">&#62;&#62;</div>
+        </section>
+        <footer>
+            <div>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div>Todos los derechos reservados</div>
+        </footer>
+    </div>
 </body>
+
 </html>
