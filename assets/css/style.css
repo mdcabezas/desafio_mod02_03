@@ -7,8 +7,9 @@
 }
 
 .container {
-    /* height: 100vh; */
+    height: 100vh;
     display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
         "header"
         "aside"
@@ -24,7 +25,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 30px;
-    /* font-size: 50px; */
+}
+
+header p i{
+    color:#27EA0C;
 }
 
 aside {
@@ -33,34 +37,34 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .aside__select {
-    width: 100%;
+    width: 60%;
 }
 
 main {
     grid-area: main;
+    overflow: auto;
 }
 
 section {
     grid-area: section;
     display: flex;
-    /* border: 1px solid #041801; */
     margin: 4px auto;
 }
 
-.filter-item {
+.paginator {
     padding: 4px;
     border: 1px solid #041801;
 }
 
-.filter-item__start {
+.paginator__start {
     border-radius: 5px 0px 0px 5px;
 }
 
-.filter-item__end {
+.paginator__end {
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -75,8 +79,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow: scroll; */
-    overflow-y: scroll;
 }
 
 .card-product {
@@ -85,11 +87,10 @@ footer {
     align-items: center;
     background-color: #fff;
     border: 1px solid #dddddd;
-    ;
     border-radius: 5px;
-    margin: 20px;
-    padding: 20px;
-    /* border-radius: 10px 10px 0px 0px; */
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px #dddddd;
 }
 
 .card-product__image {
@@ -106,4 +107,49 @@ footer {
     border-radius: 5px;
     padding: 10px 15px;
     color: #fff;
+}
+
+.header__menu {
+    display: none;
+}
+
+@media(min-width: 576px) {
+    .container {
+        /* height: 100vh;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto auto; */
+        grid-template-areas:
+            "header aside"
+            "header main"
+            "footer section";
+    }
+
+    .container-products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        /* overflow: scroll;
+        overflow-y: scroll; */
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .header__menu {
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .header__menu li {
+        list-style: none;
+    }
 }
