@@ -5,7 +5,7 @@
 
 [https://mdcabezas.github.io/desafio_mod02_03/](https://mdcabezas.github.io/desafio_mod02_03/)
 
-![Screenshot1](./asset/img/screenshot1.jpg)
-![Screenshot2](./asset/img/screenshot2.jpg)
+![Screenshot1](./assets/img/screenshot1.jpg)
+![Screenshot2](./assets/img/screenshot2.jpg)
 
 ***
